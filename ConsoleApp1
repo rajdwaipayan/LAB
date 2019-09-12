@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MyConsoleApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           
+            String Name, Address, Contact;
+            int Age;
+            Console.Write("Enter Your Name   :");
+            Name = Console.ReadLine();
+            Console.Write("Enter Your Age   :");
+            Age = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Write Your Address   :");
+            Address = Console.ReadLine();
+            Console.Write("Enter Your Contact No :   ");
+            Contact = Console.ReadLine();
+
+            Console.WriteLine("\n\t\t\tOutput");
+            Console.WriteLine("Name\t\tAge\tAddress\t\tContact No");
+            Console.WriteLine(Name + "\t" +Age + "\t" +Address + "\t\t" +Contact);
+            Console.ReadKey();
+        }
+    }
+}
